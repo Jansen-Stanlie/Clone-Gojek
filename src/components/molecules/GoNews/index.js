@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {View, Image, TouchableOpacity, Text} from 'react-native';
-const GoNews = () => {
+const GoNews = ({onTekan}) => {
   return (
     <View
       style={{
@@ -70,7 +70,8 @@ const GoNews = () => {
             paddingVertical: 11,
             alignSelf: 'flex-end',
             borderRadius: 4,
-          }}>
+          }}
+          onPress={onTekan}>
           <Text
             style={{
               fontSize: 13,
